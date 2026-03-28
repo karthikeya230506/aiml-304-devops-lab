@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MVS Engineering College</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Top Header -->
+<div class="topbar">
+    <h2>MVSR Engineering College</h2>
+    <h2>Affiliated to Osmania university</h2>
+    <p>(An Autonomous Institution)</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#" onclick="showHome()">Home</a>
+    <a href="#" onclick="showAcademics()">Academics</a>
+    <a href="#" onclick="showDepartments()">Departments</a>
+    <a href="#" onclick="showContact()">Contact</a>
+</div>
+
+<!-- Main Content Area -->
+<div class="content" id="contentArea">
+    <h1>Welcome to MVSR Engineering College</h1>
+    <p>You are in Homepage</p>
+</div>
+
+<!-- Boxes Section -->
+<div class="boxes">
+    <div class="box">Training & Placement</div>
+    <div class="box">Professional Bodies</div>
+    <div class="box">Time Tables</div>
+    <div class="box">Syllabus</div>
+    <div class="box">Facilities</div>
+    <div class="box">Student Clubs</div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2026 MVSR Engineering College | All Rights Reserved
+</div>
+
+<!-- JavaScript -->
+<script>
+function showHome() {
+    document.getElementById("contentArea").innerHTML =
+    "<h1>Welcome to MVS Engineering College</h1><p>You are in Homepage</p>";
+}
+
+function showAcademics() {
+    document.getElementById("contentArea").innerHTML =
+    "<h1>Academics</h1><p>Our college offers Civil, CSE, ECE, EEE, IT and Mechanical Engineering courses.</p>";
+}
+
+function showDepartments() {
+    document.getElementById("contentArea").innerHTML =
+    "<h1>Departments</h1><ul><li>Computer Science Engineering</li><li>Electrical Engineering</li><li>Civil Engineering</li><li>Mechanical Engineering</li><li>Electronics & Communication Engineering</li></ul>";
+}
+
+function showContact() {
+    document.getElementById("contentArea").innerHTML =
+    "<h1>Contact Us</h1><p>Email: info@mvsrcollege.com</p><p>Phone: 9876543210</p>";
+}
+</script>
+
+</body>
+</html>
+
